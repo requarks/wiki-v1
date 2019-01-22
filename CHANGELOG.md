@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [v1.0.117] - 2019-01-21
+### Fixed
+- **Authentication**: Upgrade to patched Google auth module (Google+ deprecation)
+
 ## [v1.0.102] - 2018-08-02
 ### Added
 - **Authentication**: Open ID Connection provider (thanks to @sazulo)

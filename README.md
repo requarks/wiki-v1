@@ -68,10 +68,12 @@ Current and upcoming milestones *(major features only, see the [changelog](https
 
 :bookmark_tabs: See [project board](https://waffle.io/Requarks/wiki) to keep track of current progress.
 
-### 1.0.102 - Stable
-![Progress](http://progressed.io/bar/100)
-
+### 1.0.117 - Stable
 **Note**: As 2.0 is under development, no new features are being developed in the 1.0 branch.
+
+- [x] Fixed: Upgrade to patched Google auth module (Google+ deprecation)
+
+### 1.0.102 - Stable
 
 - [x] Added: Open ID Connection provider (thanks to @sazulo)
 - [x] Added: Turkish locale is now available (thanks to @MrSimsek)

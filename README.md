@@ -2,7 +2,7 @@
 
 <img src="https://beta.requarks.io/svg/logo.svg" alt="Wiki.js" width="375" />
 
-[![Release](https://img.shields.io/github/release/Requarks/wiki.svg?style=flat&maxAge=3600)](https://github.com/Requarks/wiki/releases)
+[![Release](https://img.shields.io/github/release/Requarks/wiki-v1.svg?style=flat&maxAge=3600)](https://github.com/Requarks/wiki/releases)
 [![License](https://img.shields.io/badge/license-AGPLv3-blue.svg?style=flat)](https://github.com/requarks/wiki/blob/master/LICENSE)
 [![Backers on Open Collective](https://opencollective.com/wikijs/backers/badge.svg)](#backers)
 [![Sponsors on Open Collective](https://opencollective.com/wikijs/sponsors/badge.svg)](#sponsors)

@@ -54,7 +54,7 @@ module.exports = function (passport) {
   // Google ID
 
   if (appconfig.auth.google && appconfig.auth.google.enabled) {
-    const GoogleStrategy = require('passport-google-oauth20').Strategy
+    const GoogleStrategy = require('@passport-next/passport-google-oauth2').Strategy
     passport.use('google',
       new GoogleStrategy({
         clientID: appconfig.auth.google.clientId,

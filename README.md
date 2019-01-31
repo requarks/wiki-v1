@@ -27,11 +27,18 @@
 - [Feature Requests](https://requests.requarks.io/wiki)
 - [Milestones](#milestones)
 - [Chat with us](#gitter)
-- [Donate](https://opencollective.com/wikijs)
 - [T-Shirts Shop](#t-shirts-shop)
 - [Translations](#translations) *(We need your help!)*
 - [Special Thanks](#special-thanks)
 - [Contribute](#contributors)
+
+<h2 align="center">Donate</h2>
+
+Wiki.js is an open source project that has been made possible due to the generous contributions by community [backers](https://github.com/Requarks/wiki/blob/master/BACKERS.md). If you are interested in supporting this project, please consider [becoming a patron](https://www.patreon.com/requarks) or donating to our [OpenCollective](https://opencollective.com/wikijs).
+
+<a href="https://www.patreon.com/requarks">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron" />
+</a>
 
 <h2 align="center">Requirements</h2>
 

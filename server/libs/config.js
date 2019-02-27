@@ -14,7 +14,7 @@ const cfgHelper = require('../helpers/config')
  */
 module.exports = (confPaths) => {
   confPaths = _.defaults(confPaths, {
-    config: path.join(ROOTPATH, 'config.yml'),
+    config: CONFIGPATH,
     data: path.join(SERVERPATH, 'app/data.yml'),
     dataRegex: path.join(SERVERPATH, 'app/regex.js')
   })

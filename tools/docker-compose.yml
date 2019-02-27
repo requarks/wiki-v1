@@ -19,5 +19,6 @@ services:
       - '80:3000'
     environment:
       WIKI_ADMIN_EMAIL: admin@example.com
+      CONFIG_PATH: /var/wiki
     volumes:
       - ./config.yml:/var/wiki/config.yml

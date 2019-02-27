@@ -5,6 +5,13 @@ module.exports = (port, spinner) => {
 
   const ROOTPATH = process.cwd()
   const SERVERPATH = path.join(ROOTPATH, 'server')
+  const CONFIGPATH = path.join(
+    process.env.CONFIG_PATH
+      ? process.env.CONFIG_PATH.endsWith('/')
+        ? process.env.CONFIG_PATH.slice(0, -1)
+        : process.env.CONFIG_PATH
+      : ROOTPATH, 'config.yml'
+  )
   const IS_DEBUG = process.env.NODE_ENV === 'development'
 
   // ----------------------------------------
@@ -59,7 +66,7 @@ module.exports = (port, spinner) => {
     let conf = {}
     try {
       langs = yaml.safeLoad(fs.readFileSync(path.join(SERVERPATH, 'app/data.yml'), 'utf8')).langs
-      conf = yaml.safeLoad(fs.readFileSync(path.join(ROOTPATH, 'config.yml'), 'utf8'))
+      conf = yaml.safeLoad(fs.readFileSync(CONFIGPATH, 'utf8'))
     } catch (err) {
       console.error(err)
     }
@@ -118,7 +125,7 @@ module.exports = (port, spinner) => {
       () => {
         let fs = require('fs')
         return Promise.try(() => {
-          fs.accessSync(path.join(ROOTPATH, 'config.yml'), (fs.constants || fs).W_OK)
+          fs.accessSync(CONFIGPATH, (fs.constants || fs).W_OK)
         }).catch(err => { // eslint-disable-line handle-callback-err
           throw new Error('config.yml file is not writable by Node.js process or was not created properly.')
         }).return('config.yml is writable by the setup process.')
@@ -315,7 +322,7 @@ module.exports = (port, spinner) => {
           }
         })
       }),
-      fs.readFileAsync(path.join(ROOTPATH, 'config.yml'), 'utf8').then(confRaw => {
+      fs.readFileAsync(CONFIGPATH).then(confRaw => {
         let conf = yaml.safeLoad(confRaw)
         conf.title = req.body.title
         conf.host = req.body.host
@@ -356,7 +363,7 @@ module.exports = (port, spinner) => {
         return crypto.randomBytesAsync(32).then(buf => {
           conf.sessionSecret = buf.toString('hex')
           confRaw = yaml.safeDump(conf)
-          return fs.writeFileAsync(path.join(ROOTPATH, 'config.yml'), confRaw)
+          return fs.writeFileAsync(CONFIGPATH, confRaw)
         })
       })
     ).then(() => {

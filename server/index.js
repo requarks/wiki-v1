@@ -9,9 +9,17 @@
 const path = require('path')
 const ROOTPATH = process.cwd()
 const SERVERPATH = path.join(ROOTPATH, 'server')
+const CONFIGPATH = path.join(
+  process.env.CONFIG_PATH
+    ? process.env.CONFIG_PATH.endsWith('/')
+      ? process.env.CONFIG_PATH.slice(0, -1)
+      : process.env.CONFIG_PATH
+    : ROOTPATH, 'config.yml'
+)
 
 global.ROOTPATH = ROOTPATH
 global.SERVERPATH = SERVERPATH
+global.CONFIGPATH = CONFIGPATH
 const IS_DEBUG = process.env.NODE_ENV === 'development'
 
 process.env.VIPS_WARNING = false

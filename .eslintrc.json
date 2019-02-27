@@ -17,6 +17,7 @@
     // Server
     "appconfig": true,
     "appdata": true,
+    "CONFIGPATH": true,
     "ROOTPATH": true,
     "SERVERPATH": true,
     "IS_DEBUG": true

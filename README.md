@@ -54,7 +54,7 @@ Wiki.js can run on virtually all platforms where Node.js can (Windows, Mac, Linu
 <h2 align="center">Docker / Cloud Install</h2>
 
 A docker image is available on Docker Hub.  
-You can also use a Dockerfile ([see example](https://github.com/Requarks/wiki/blob/master/tools/Dockerfile)) or Docker Compose ([see example](https://github.com/Requarks/wiki/blob/master/tools/docker-compose.yml)) to run Wiki.js.  
+You can also use a Dockerfile ([see example](https://github.com/Requarks/wiki-v1/blob/master/tools/Dockerfile)) or Docker Compose ([see example](https://github.com/Requarks/wiki-v1/blob/master/tools/docker-compose.yml)) to run Wiki.js.  
 <a href="https://hub.docker.com/r/requarks/wiki/" title="Docker Image"><img src="https://wiki.js.org/assets/svg/deploy-docker.svg" alt="Docker Image" height="36" /></a>
 
 Deploy to Heroku using this pre-built deployment template:  

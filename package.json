@@ -121,7 +121,7 @@
     "socket.io": "~2.0.2",
     "stopword": "~0.1.6",
     "stream-to-promise": "~2.2.0",
-    "tar": "~4.0.1",
+    "tar": "~4.4.2",
     "through2": "~2.0.3",
     "validator": "~8.1.0",
     "validator-as-promised": "~1.0.2",

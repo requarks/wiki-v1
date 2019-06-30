@@ -11,7 +11,6 @@
 ![Build Status](https://requarks.visualstudio.com/_apis/public/build/definitions/5850c090-02b9-4312-b4ce-0e1f5677b574/6/badge)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1d0217a3153c4595bdedb322263e55c8)](https://www.codacy.com/app/Requarks/wiki)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
-[![Chat on Gitter](https://img.shields.io/badge/chat-on_gitter-CC2B5E.svg?style=flat&logo=image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAOCAMAAADUg/YpAAAABlBMVEUAAAD///%2Bl2Z/dAAAAAXRSTlMAQObYZgAAABVJREFUeAFjwAUYYTQByAAh0WicAAAFnwAYeB5bLwAAAABJRU5ErkJggg==)](https://gitter.im/Requarks/wiki)
 [![Twitter Follow](https://img.shields.io/badge/follow-%40requarks-blue.svg?style=flat)](https://twitter.com/requarks)
 
 ##### A modern, lightweight and powerful wiki app built on NodeJS, Git and Markdown
@@ -20,7 +19,7 @@
 
 - **[Official Website](https://wiki.js.org/)**
 - **[Getting Started](https://wiki.js.org/get-started.html)**
-- **[Documentation](https://docs.requarks.io/wiki)**
+- **[Documentation](https://docs-legacy.requarks.io/wiki)**
 - [Requirements](#requirements)
 - [Demo](#demo)
 - [Change Log](https://github.com/Requarks/wiki/blob/master/CHANGELOG.md)
@@ -49,7 +48,7 @@ Wiki.js can run on virtually all platforms where Node.js can (Windows, Mac, Linu
 - Git **2.7.4** or later
 - An empty Git repository (optional)
 
-> Read the full [prerequisites](https://docs.requarks.io/wiki/install/prerequisites) article for full details.
+> Read the full [prerequisites](https://docs-legacy.requarks.io/wiki/install/prerequisites) article for full details.
 
 <h2 align="center">Docker / Cloud Install</h2>
 
@@ -71,10 +70,6 @@ The legacy Wiki.js documentation site is actually running Wiki.js! [Check it out
 
 <h2 align="center">Milestones</h2>
 
-Current and upcoming milestones *(major features only, see the [changelog](https://docs.requarks.io/wiki/developers/changelog) for complete list of features and bug fixes)*:
-
-:bookmark_tabs: See [project board](https://waffle.io/Requarks/wiki) to keep track of current progress.
-
 ### 1.0.117 - Stable
 **Note**: As 2.0 is under development, no new features are being developed in the 1.0 branch.
 
@@ -86,11 +81,6 @@ Current and upcoming milestones *(major features only, see the [changelog](https
 - [x] Added: Turkish locale is now available (thanks to @MrSimsek)
 - [x] Fixed: Paths in git commits are no longer escaped (thanks to @EricFromCanada)
 - [x] Fixed: Fixed potential bug when uploading certain images (thanks to @Gnurdle)
-
-<h2 align="center">Gitter</h2>
-
-Want to discuss features, ideas or issues? Join our [gitter channel](https://gitter.im/Requarks/wiki). We are very active and friendly!  
-[![Chat on Gitter](https://img.shields.io/badge/chat-on_gitter-CC2B5E.svg?style=flat-square&logo=image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAOCAMAAADUg/YpAAAABlBMVEUAAAD///%2Bl2Z/dAAAAAXRSTlMAQObYZgAAABVJREFUeAFjwAUYYTQByAAh0WicAAAFnwAYeB5bLwAAAABJRU5ErkJggg==)](https://gitter.im/Requarks/wiki)
 
 <h2 align="center">Twitter</h2>
 

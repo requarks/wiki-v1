@@ -130,7 +130,7 @@
 <script>
   export default {
     name: 'editor-file',
-    data () {
+    data () {		
       return {
         isLoading: false,
         isLoadingText: '',
@@ -164,7 +164,12 @@
     },
     methods: {
       init () {
-        $(this.$refs.editorFileUploadInput).on('change', this.upload)
+		const oSelf = this;
+        $(this.$refs.editorFileUploadInput).on('change', function(){
+			// Manual update of the value... because it's somehow needed$
+			oSelf.$refs.editorFileUploadInput = this;			
+			oSelf.upload()
+		})
         this.refreshFolders()
       },
       cancel () {
@@ -523,9 +528,8 @@
         let self = this
         let curFileAmount = this.files.length
         let uplUrl = (self.mode === 'image') ? '/uploads/img' : '/uploads/file'
-
+		
         $(this.$refs.editorFileUploadInput).simpleUpload(uplUrl, {
-
           name: (self.mode === 'image') ? 'imgfile' : 'binfile',
           data: {
             folder: self.currentFolder
@@ -535,7 +539,7 @@
           allowedExts: (self.mode === 'image') ? ['jpg', 'jpeg', 'gif', 'png', 'webp'] : undefined,
           allowedTypes: (self.mode === 'image') ? ['image/png', 'image/jpeg', 'image/gif', 'image/webp'] : undefined,
           maxFileSize: (self.mode === 'image') ? 3145728 : 0, // max 3 MB
-
+	  
           init: (totalUploads) => {
             self.uploadSucceeded = false
             self.isLoadingText = 'Preparing to upload...'
@@ -592,7 +596,6 @@
               self.isLoading = false
             }
           }
-
         })
       }
     },

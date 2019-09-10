@@ -117,10 +117,7 @@ export default {
           '|',
           {
             name: 'link',
-            action: (editor) => {
-              window.alert('Coming soon!')
-              // todo
-            },
+            action: SimpleMDE.drawLink,
             className: 'nc-icon-outline ui-2_link-68',
             title: 'Insert Link'
           },
@@ -181,10 +178,7 @@ export default {
           '|',
           {
             name: 'table',
-            action: (editor) => {
-              window.alert('Coming soon!')
-              // todo
-            },
+            action: SimpleMDE.drawTable,
             className: 'nc-icon-outline ui-2_grid-square',
             title: 'Insert Table'
           },

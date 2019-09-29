@@ -238,6 +238,7 @@ module.exports = {
         .rgba(false)
         .write(destPath)
     })
+    .catch(err => console.error(err))
   },
 
   /**

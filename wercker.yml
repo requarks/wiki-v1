@@ -38,7 +38,7 @@ deploy-docker-master:
     - internal/docker-push:
         username: $DOCKER_HUB_USERNAME
         password: $DOCKER_HUB_PASSWORD
-        tag: latest, master
+        tag: 1.0
         ports: "3000"
         working-dir: /var/wiki
         entrypoint: node server
@@ -63,7 +63,7 @@ deploy-docker-dev:
     - internal/docker-push:
         username: $DOCKER_HUB_USERNAME
         password: $DOCKER_HUB_PASSWORD
-        tag: dev
+        tag: 1.0-dev
         ports: "3000"
         working-dir: /var/wiki
         entrypoint: node server

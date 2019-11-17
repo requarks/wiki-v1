@@ -1,4 +1,4 @@
-FROM requarks/wiki:latest
+FROM requarks/wiki:1.0
 
 # Replace with your email address:
 ENV WIKI_ADMIN_EMAIL admin@example.com

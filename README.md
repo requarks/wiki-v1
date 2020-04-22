@@ -62,7 +62,7 @@ Wiki.js can run on virtually all platforms where Node.js can (Windows, Mac, Linu
 - Git **2.7.4** or later
 - An empty Git repository (optional)
 
-> Read the full [prerequisites](https://docs-legacy.requarks.io/wiki/install/prerequisites) article for full details.
+> Read the full [prerequisites](https://docs-legacy.requarks.io/wiki/prerequisites) article for full details.
 
 <h2 align="center">Docker / Cloud Install</h2>
 

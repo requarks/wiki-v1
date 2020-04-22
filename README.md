@@ -85,7 +85,7 @@ The legacy Wiki.js documentation site is actually running Wiki.js! [Check it out
 <h2 align="center">Milestones</h2>
 
 ### 1.0.117 - Stable
-**Note**: This is the last 1.x release, no new features are being developed in the 1.0 branch. Considering upgrading to the latest major version.
+**Note**: This is the last 1.x release, no new features are being developed in the 1.0 branch. Consider upgrading to the [latest major version](https://github.com/Requarks/wiki).
 
 - [x] Fixed: Upgrade to patched Google auth module (Google+ deprecation)
 

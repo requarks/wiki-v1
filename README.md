@@ -2,6 +2,12 @@
 
 <img src="https://wiki.js.org/img/logo.fc80554c.svg" alt="Wiki.js" width="375" />
 
+---
+
+> :warning: **This repository is for the legacy 1.x version of Wiki.js.** It's highly recommended to use the [latest version](https://github.com/Requarks/wiki) instead.
+
+---
+
 [![Release](https://img.shields.io/github/release/Requarks/wiki-v1.svg?style=flat&maxAge=3600)](https://github.com/Requarks/wiki/releases)
 [![License](https://img.shields.io/badge/license-AGPLv3-blue.svg?style=flat)](https://github.com/requarks/wiki/blob/master/LICENSE)
 [![Backers on Open Collective](https://opencollective.com/wikijs/backers/badge.svg)](#backers)
@@ -71,7 +77,7 @@ The legacy Wiki.js documentation site is actually running Wiki.js! [Check it out
 <h2 align="center">Milestones</h2>
 
 ### 1.0.117 - Stable
-**Note**: As 2.0 is under development, no new features are being developed in the 1.0 branch.
+**Note**: This is the last 1.x release, no new features are being developed in the 1.0 branch. Considering upgrading to the latest major version.
 
 - [x] Fixed: Upgrade to patched Google auth module (Google+ deprecation)
 

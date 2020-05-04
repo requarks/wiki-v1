@@ -13,7 +13,14 @@ module.exports = {
    * Detect the most appropriate start mode
    */
   startDetect: function () {
-    if (process.env.WIKI_JS_HEROKU) {
+    let isHeroku = typeof process.env.WIKI_JS_HEROKU === 'boolean'
+      ? process.env.WIKI_JS_HEROKU
+      : (
+        process.env.WIKI_JS_HEROKU === '1'
+        || process.env.WIKI_JS_HEROKU === 'true'
+      )
+
+    if (isHeroku) {
       return this.startInHerokuMode()
     } else {
       return this.startInBackgroundMode()

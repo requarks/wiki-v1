@@ -289,7 +289,7 @@ module.exports = {
     let self = this
     let gitFilePath = entryPath + '.md'
 
-    return self._git.exec('log', ['--max-count=25', '--skip=1', '--format=format:%H %h %cI %cE %cN', '--', gitFilePath]).then((cProc) => {
+    return self._git.exec('log', ['--max-count=25', '--skip=1', '--format=format:%H %h %cI %aE %aN', '--', gitFilePath]).then((cProc) => {
       let out = cProc.stdout.toString()
       if (_.includes(out, 'fatal')) {
         let errorMsg = _.capitalize(_.head(_.split(_.replace(out, 'fatal: ', ''), ',')))
